@@ -1,176 +1,149 @@
-# HyperFlow Presale Details
-
-# HyperFlow Protocol Public Presale
+# HyperFlow Protocol - Presale Details
 
 ## Presale Overview
 
-**Token**: $FLOW  
-**Presale Allocation**: 5,000,000 FLOW (5% of total supply)  
-**Presale Price**: $0.005 per FLOW token  
-**Total Raise**: $25,000 USD  
-**Initial Market Cap**: $500,000 (at presale price)
+The HyperFlow Protocol presale offers early access to FLOW tokens before the official launch. Designed with community governance principles and fair distribution mechanisms, the presale ensures equal opportunity participation without tier discrimination or preferential treatment for large investors.
 
-## Presale Structure
+**Presale Key Metrics:**
+- **Token Allocation**: 50,000,000 FLOW tokens (5% of total supply)
+- **Token Price**: $0.0005 per FLOW
+- **Total Raise**: $25,000
+- **Minimum Purchase**: $10
+- **Maximum Purchase**: No Limit
+- **Vesting**: Immediate availability
 
-### Single Phase Public Sale
-- **Allocation**: 5,000,000 FLOW (100% of presale)
-- **Price**: $0.005 per FLOW
-- **Raise Target**: $25,000
-- **Duration**: 4 weeks
-- **Vesting**: Immediate unlock at launch
+## Fair Distribution Model
 
-### Total Presale Target: $25,000
+### Community Governance Principles
+Unlike traditional presales that favor large investors through tier systems and exclusive allocations, HyperFlow Protocol implements a fair distribution model that ensures equal access and opportunity for all participants.
 
-## Fair Public Sale - No Tiers
+- **No Tier Discrimination**: All participants receive the same token price regardless of investment amount
+- **No Wallet Caps**: Equal opportunity for all participants without artificial restrictions
+- **Transparent Process**: Clear terms and conditions with no hidden preferences
+- **Immediate Availability**: Tokens are available immediately after purchase with no vesting delays
+- **Community First**: Designed to benefit the entire ecosystem rather than privileged investors
 
-### Equal Access for All Participants
-- **No minimum investment** - Start with any amount
-- **No maximum limits** - Buy as much as you want (subject to allocation)
-- **Same benefits for everyone** - All participants get equal treatment
-- **Phase-based bonuses only** - Earlier phases get higher bonuses
+## Presale Structure & Details
 
-### Universal Benefits for All Participants
-- **Governance Rights**: All token holders can vote on protocol decisions
-- **Revenue Sharing**: All stakers receive equal percentage of protocol fees
-- **Platform Access**: Everyone gets full access to all protocol features
-- **Community Membership**: Equal participation in ecosystem growth
-
-## Vesting Schedule
-
-### Presale Token Release
-- **Phase 1 (Early Bird)**: 6-month linear vesting
-- **Phase 2 (Standard)**: 3-month linear vesting  
-- **Phase 3 (Final)**: Immediate unlock at launch
-- **Bonus Tokens**: Same vesting as base allocation
-
-### Anti-Dump Mechanisms
-- **Gradual Release**: Prevents large sell pressure
-- **Staking Incentives**: Higher rewards for longer locks
-- **Utility Requirements**: Many features require token holding
-- **Community Governance**: Aligned long-term interests
-
-## Presale Terms & Conditions
-
-### Accepted Payment Methods
-- **HYPE**: Primary payment method (HyperEVM native)
-- **USDC**: Stablecoin alternative  
-- **USDT**: Additional stablecoin option
-- **ETH**: Cross-chain bridge payments accepted
-
-### Public Sale Limits
-- **Individual Minimum**: No minimum - start with any amount
-- **Individual Maximum**: No maximum - subject to phase allocation limits
-- **Total Hard Cap**: $25,000 USD
-- **Soft Cap**: $10,000 USD (minimum for launch)
-- **First Come, First Served**: Each phase fills up based on participation order
-
-### Geographic Restrictions
-- **Excluded**: US, China, North Korea, Iran, Syria
-- **KYC Required**: Optional for all participants
-- **Compliance**: Full regulatory compliance in all jurisdictions
+| Parameter | Value | Description |
+|-----------|-------|-------------|
+| **Token Allocation** | 50,000,000 FLOW | 5% of total 1B FLOW supply reserved for presale |
+| **Token Price** | $0.0005 per FLOW | Fixed price for all participants |
+| **Total Fundraising Target** | $25,000 | Conservative funding target for initial development |
+| **Minimum Purchase** | $10 | Low barrier to entry for community participation |
+| **Maximum Purchase** | No Limit | No artificial caps on individual participation |
+| **Payment Methods** | HYPE, ETH, USDC | Multiple payment options for accessibility |
+| **Vesting Schedule** | Immediate | Tokens available immediately after purchase |
+| **Lock-up Period** | None | Full liquidity from day one |
 
 ## Use of Funds
 
-### Development (60% - $15,000)
-- **Smart Contract Development**: $5,000
-- **Frontend Development**: $3,000  
-- **Backend Infrastructure**: $2,500
-- **Security Audits**: $2,000
-- **Testing & QA**: $1,500
-- **Integration Development**: $1,000
+| Category | Allocation | Amount | Purpose |
+|----------|------------|--------|---------|
+| Development | 60% | $15,000 | Smart contract development, audits, testing |
+| Marketing & Community | 25% | $6,250 | Community building, marketing campaigns, partnerships |
+| Operations | 10% | $2,500 | Legal, compliance, administrative costs |
+| Reserve Fund | 5% | $1,250 | Emergency fund and unexpected expenses |
 
-### Marketing & Growth (25% - $6,250)
-- **Community Building**: $2,500
-- **Influencer Partnerships**: $1,500
-- **Content Creation**: $1,000
-- **Social Media**: $750
-- **PR & Media**: $500
+## Presale Timeline & Milestones
 
-### Operations (10% - $2,500)
-- **Initial Team Costs**: $1,500
-- **Legal & Compliance**: $500
-- **Tools & Services**: $300
-- **Administrative Costs**: $200
+### Phase 1: Preparation
+- Smart contract deployment and testing
+- Security audit completion
+- Presale platform setup and verification
+- Community announcement and documentation release
 
-### Liquidity & Market Making (5% - $1,250)
-- **Initial DEX Liquidity**: $1,000
-- **Market Making Support**: $250
+### Phase 2: Presale Launch
+- Presale platform goes live with public access
+- Community campaigns and social media promotion
+- Real-time progress tracking and transparency reports
+- 24/7 community support during presale period
 
-## Token Launch Plan
+### Phase 3: Post-Presale Development
+- Protocol development using raised funds
+- Additional partnerships and integrations
+- Community governance implementation
+- Preparation for mainnet launch
 
-### DEX Listing Strategy
-- **HyperSwap**: Primary listing at $0.002-0.005
-- **Initial Liquidity**: $1,000 FLOW/HYPE pair
-- **Liquidity Lock**: 12 months to prevent rug pull
-- **Trading Start**: 24 hours after presale completion
+### Phase 4: Protocol Launch
+- HyperFlow Protocol mainnet deployment
+- Yield farming and staking rewards activation
+- DEX listings and liquidity provision
+- Revenue sharing mechanism implementation
 
-### Yield Farming Launch
-- **Farming Pools**: 300M FLOW over 4 years
-- **Initial APY**: 200-500% for early adopters
-- **Supported Pairs**: FLOW/HYPE, FLOW/USDC, FLOW/ETH
-- **Cross-Protocol Incentives**: Additional rewards for multi-platform usage
+## Participation Requirements
 
-## Presale Timeline
+### Eligibility & Compliance
+- **KYC/AML**: Basic identity verification required for regulatory compliance
+- **Geographic Restrictions**: Presale may not be available in certain jurisdictions
+- **Wallet Requirements**: ERC-20 compatible wallet for receiving FLOW tokens
+- **Minimum Age**: Participants must be 18 years or older
+- **Terms Acceptance**: Agreement to presale terms and conditions required
 
-### Preparation Phase (Week 1-2)
-- Smart contract audits completion
-- Marketing campaign launch
-- Community building and partnerships
-- KYC/AML system implementation
+## Risk Factors & Disclaimers
 
-### Presale Phase 1: Early Bird (Week 3-4)
-- Exclusive access for whitelisted investors
-- $0.08 price with maximum bonuses
-- Limited to 20M FLOW allocation
+### Important Risk Considerations
+- **Early Stage Project**: HyperFlow Protocol is in development with inherent risks
+- **Token Value Volatility**: FLOW token price may fluctuate significantly
+- **Regulatory Changes**: Future regulations may impact token utility and value
+- **Technical Risks**: Smart contract bugs or vulnerabilities are possible
+- **Market Conditions**: Broader crypto market conditions may affect project success
+- **No Investment Advice**: This presale does not constitute investment advice
 
-### Presale Phase 2: Public (Week 5-8)  
-- Open to all qualified investors
-- $0.10 standard price
-- Main fundraising period
+## Token Economics Integration
 
-### Presale Phase 3: Final (Week 9)
-- Last chance at presale pricing
-- $0.12 price, immediate unlock
-- Preparation for DEX launch
+### Presale Token Allocation Within Total Supply
+| Allocation Category | Percentage | Token Amount | Relationship to Presale |
+|-------------------|------------|--------------|------------------------|
+| **Presale** | 5% | 50,000,000 FLOW | Early community access tokens |
+| **Public Sale** | 35% | 350,000,000 FLOW | Remaining public distribution |
+| **Development Fund** | 25% | 250,000,000 FLOW | Protocol development funding |
+| **Community Rewards** | 20% | 200,000,000 FLOW | Yield farming and ecosystem incentives |
+| **Team** | 10% | 100,000,000 FLOW | Core team compensation |
+| **Partnerships** | 5% | 50,000,000 FLOW | Strategic integrations |
 
-### Launch Phase (Week 10)
-- DEX listing and trading start
-- Yield farming activation  
-- Protocol features go live
+## Post-Presale Benefits
 
-## Investment ROI Projections
+### Early Participant Advantages
+Presale participants gain immediate access to all FLOW token utilities and benefits upon protocol launch:
 
-### Conservative Scenario
-- **Launch Price**: $0.002 (300% gain from $0.0005 presale)
-- **6-Month Target**: $0.01 (1900% total return)
-- **12-Month Target**: $0.05 (9900% total return)
-- **Revenue Sharing**: 25-35% APY from staking
-
-### Optimistic Scenario  
-- **Launch Price**: $0.005 (900% gain from $0.0005 presale)
-- **6-Month Target**: $0.02 (3900% total return)
-- **12-Month Target**: $0.10 (19900% total return)
-- **Revenue Sharing**: 50-100% APY from staking
-
-### Risk Factors
-- Market volatility and crypto bear markets
-- Competition from other HyperEVM protocols
-- Regulatory changes affecting DeFi
-- Technical risks and smart contract vulnerabilities
-
-**Disclaimer**: All projections are estimates based on market analysis and comparable projects. Cryptocurrency investments carry significant risk and past performance does not guarantee future results.
+- **Governance Rights**: Immediate voting power in protocol decisions
+- **Revenue Sharing**: 70% of protocol fees distributed to stakers
+- **Yield Enhancement**: Access to premium strategies with multipliers
+- **Fee Discounts**: Reduced costs on all platform interactions
+- **Priority Access**: Early access to new features and integrations
+- **Community Status**: Recognition as an early supporter and contributor
 
 ## How to Participate
 
-1. **Join Whitelist**: Visit hyperflow.finance and register
-2. **Complete KYC**: Required for investments above $10,000
-3. **Prepare Funds**: HYPE, USDC, USDT, or ETH ready
-4. **Monitor Phases**: Early bird gets best pricing
-5. **Stake Immediately**: Maximize rewards from day one
+### Step-by-Step Process
+1. **Wallet Setup**: Ensure you have an ERC-20 compatible wallet
+2. **Fund Preparation**: Acquire HYPE, ETH, or USDC for participation
+3. **Platform Access**: Visit the official HyperFlow presale platform
+4. **Identity Verification**: Complete required KYC/AML verification
+5. **Purchase Tokens**: Select amount and complete payment
+6. **Token Delivery**: Receive FLOW tokens immediately in your wallet
 
-The presale represents an exceptional opportunity to join the future of HyperEVM DeFi infrastructure at the ground floor with significant upside potential and sustainable revenue sharing.
+### Security Reminders
+- Only use the official presale platform - beware of scams
+- Verify all contract addresses and platform URLs
+- Never share your private keys or seed phrases
+- Double-check all transaction details before confirmation
+
+## Community & Support
+
+### Official Channels
+- **Website**: https://clockerwork02.github.io
+- **Documentation**: Complete protocol specifications and guides
+- **Smart Contracts**: Open source and verified on HyperEVM
+- **Community Support**: 24/7 assistance during presale period
+
+## Conclusion
+
+The HyperFlow Protocol presale represents an opportunity to participate in a next-generation DeFi infrastructure project designed with community governance principles and sustainable tokenomics. With fair distribution, immediate token availability, and comprehensive utility mechanisms, the presale aligns participant interests with long-term protocol success.
+
+By participating in the presale, community members support the development of advanced DeFi tools while gaining early access to a protocol designed to deliver consistent value through revenue sharing, yield enhancement, and ecosystem benefits.
 
 ---
 
-**Part of HyperFlow Protocol Documentation**
-- Main Documentation: [Clockerwork02.github.io](https://Clockerwork02.github.io)
+**For the complete protocol overview, please refer to the [HyperFlow Protocol Whitepaper](https://clockerwork02.github.io).**
