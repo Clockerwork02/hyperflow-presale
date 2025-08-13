@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presale Details - HyperFlow Protocol</title>
+    <title>HyperFlow Protocol - Public Presale Details</title>
     <style>
         * {
             margin: 0;
@@ -19,36 +19,16 @@
         }
         
         .container {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 40px 20px;
-        }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        
-        .back-link {
-            display: inline-block;
-            background: rgba(0, 212, 255, 0.1);
-            color: #00d4ff;
-            padding: 10px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            margin-bottom: 30px;
-            transition: all 0.3s ease;
-        }
-        
-        .back-link:hover {
-            background: rgba(0, 212, 255, 0.2);
-            transform: translateY(-2px);
+            padding: 40px 20px 60px 20px;
         }
         
         h1 {
             color: #00d4ff;
             font-size: 2.5rem;
-            margin-bottom: 10px;
+            text-align: center;
+            margin-bottom: 20px;
         }
         
         h2 {
@@ -71,6 +51,12 @@
             margin: 20px 0 8px 0;
         }
         
+        h5 {
+            color: #f8bbd9;
+            font-size: 1.1rem;
+            margin: 15px 0 8px 0;
+        }
+        
         p {
             margin-bottom: 15px;
             color: #cbd5e0;
@@ -81,125 +67,55 @@
             padding-left: 25px;
         }
         
-        ol {
-            margin: 15px 0;
-            padding-left: 25px;
-        }
-        
         li {
             margin-bottom: 8px;
             color: #cbd5e0;
         }
         
         strong {
-            color: #ffffff;
-            font-weight: 600;
+            color: #fff;
         }
         
         em {
-            color: #a0aec0;
+            color: #f8bbd9;
         }
         
-        code {
-            background: rgba(0, 212, 255, 0.1);
-            color: #00d4ff;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-family: monospace;
-            font-size: 0.9em;
-        }
-        
-        .code-block {
-            background: rgba(0, 0, 0, 0.4);
-            border: 1px solid rgba(0, 212, 255, 0.3);
+        pre {
+            background: rgba(20, 30, 50, 0.8);
+            border: 1px solid rgba(77, 208, 225, 0.2);
             border-radius: 8px;
+            padding: 20px;
             margin: 20px 0;
             overflow-x: auto;
         }
         
-        .code-block pre {
-            padding: 20px;
-            margin: 0;
+        code {
+            color: #81c784;
+            font-family: 'Monaco', 'Consolas', monospace;
+            font-size: 0.9rem;
         }
         
-        .code-block code {
-            background: none;
-            color: #e2e8f0;
-            padding: 0;
-        }
-        
-        hr {
-            border: none;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.5), transparent);
-            margin: 30px 0;
-        }
-        
-        .table-container {
-            background: rgba(0, 0, 0, 0.4);
-            border: 1px solid rgba(77, 208, 225, 0.3);
-            border-radius: 12px;
-            padding: 25px;
-            margin: 30px 0;
-            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.1);
-        }
-        
-        .table-container h4 {
-            color: #00d4ff;
-            text-align: center;
+        .back-link {
+            display: inline-block;
+            color: #4dd0e1;
+            text-decoration: none;
             margin-bottom: 20px;
-            font-size: 1.4rem;
+            padding: 8px 16px;
+            border: 1px solid #4dd0e1;
+            border-radius: 6px;
+            transition: all 0.3s ease;
         }
         
-        .table-responsive {
-            overflow-x: auto;
-            border-radius: 8px;
-        }
-        
-        .data-table, .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            background: rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        
-        .data-table th, .comparison-table th {
-            background: rgba(0, 212, 255, 0.2);
-            color: #ffffff;
-            padding: 15px 12px;
-            text-align: left;
-            font-weight: 600;
-            border-bottom: 2px solid rgba(0, 212, 255, 0.3);
-        }
-        
-        .data-table td, .comparison-table td {
-            padding: 12px;
-            border-bottom: 1px solid rgba(77, 208, 225, 0.2);
-            color: #cbd5e0;
-            background: rgba(0, 0, 0, 0.1);
-        }
-        
-        .data-table tr:nth-child(even) td, .comparison-table tr:nth-child(even) td {
-            background: rgba(0, 0, 0, 0.2);
-        }
-        
-        .data-table tr:hover td, .comparison-table tr:hover td {
-            background: rgba(0, 212, 255, 0.1);
-        }
-        
-        .hyperflow-advantage {
-            background: rgba(129, 199, 132, 0.2) !important;
-            color: #81c784 !important;
-            font-weight: 600;
-        }
-        
-        .comparison-table td:first-child {
-            font-weight: 600;
-            color: #ffffff;
+        .back-link:hover {
+            background: #4dd0e1;
+            color: #0a0f1c;
         }
         
         @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px 40px 15px;
+            }
+            
             h1 {
                 font-size: 2rem;
             }
@@ -208,112 +124,110 @@
                 font-size: 1.5rem;
             }
             
-            .container {
-                padding: 20px 15px;
-            }
-            
-            .table-container {
+            pre {
                 padding: 15px;
-                margin: 20px 0;
-            }
-            
-            .data-table th, .comparison-table th,
-            .data-table td, .comparison-table td {
-                padding: 8px 6px;
-                font-size: 0.9rem;
+                font-size: 0.8rem;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <a href="https://Clockerwork02.github.io" class="back-link">← Back to Main Whitepaper</a>
-        </div>
-        <h1>HyperFlow Presale</h1>
-
-<h2>Fair Launch Principles</h2>
-<p>HyperFlow adopts a democratic presale structure ensuring equal access for all participants:</p>
-<ul>
-    <li><strong>No Tier System</strong>: Equal treatment regardless of investment size</li>
-    <li><strong>Transparent Pricing</strong>: Fixed pricing structure with clear bonuses</li>
-    <li><strong>Community Focus</strong>: Prioritizing long-term community building</li>
-    <li><strong>Democratic Access</strong>: No whitelist or insider advantages</li>
-</ul>
-
-<h2>Presale Structure</h2>
-<div class="table-container">
-    <h4>Phase Breakdown</h4>
-    <div class="table-responsive">
-        <table class="data-table">
-            <thead>
-                <tr>
-                    <th>Phase</th>
-                    <th>Duration</th>
-                    <th>Price (HYPE per FLOW)</th>
-                    <th>Bonus Tokens</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Early Bird</strong></td>
-                    <td>2 weeks</td>
-                    <td>0.0008 HYPE</td>
-                    <td>25% bonus</td>
-                </tr>
-                <tr>
-                    <td><strong>Standard</strong></td>
-                    <td>4 weeks</td>
-                    <td>0.001 HYPE</td>
-                    <td>15% bonus</td>
-                </tr>
-                <tr>
-                    <td><strong>Final</strong></td>
-                    <td>1 week</td>
-                    <td>0.0012 HYPE</td>
-                    <td>5% bonus</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
-
-<h2>Investment Details</h2>
-<div class="table-container">
-    <h4>Presale Parameters</h4>
-    <div class="table-responsive">
-        <table class="data-table">
-            <thead>
-                <tr>
-                    <th>Parameter</th>
-                    <th>Details</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Total Allocation</strong></td>
-                    <td>50,000,000 FLOW (5% of total supply)</td>
-                </tr>
-                <tr>
-                    <td><strong>Base Price</strong></td>
-                    <td>0.001 HYPE per FLOW</td>
-                </tr>
-                <tr>
-                    <td><strong>Payment Methods</strong></td>
-                    <td>HYPE, USDC, USDT, ETH</td>
-                </tr>
-                <tr>
-                    <td><strong>Minimum Investment</strong></td>
-                    <td>No minimum requirement</td>
-                </tr>
-                <tr>
-                    <td><strong>Vesting</strong></td>
-                    <td>Immediate unlock for all participants</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
+        <a href="https://Clockerwork02.github.io" class="back-link">← Back to Main Documentation</a>
+        
+        <h1>HyperFlow Protocol Public Presale</h1><h2>Presale Overview</h2><p><strong>Token</strong>: $FLOW  
+<p><strong>Presale Allocation</strong>: 50,000,000 FLOW (50% of total supply)  
+<p><strong>Presale Rate</strong>: 25,000 FLOW per 1 HYPE  
+<p><strong>Total Target</strong>: 2,000 HYPE  
+<p><strong>Payment Method</strong>: HYPE only</p><h2>Presale Structure</h2><h3>Fair Launch - No Tiers or Phases</h3>
+<ul><li><strong>Allocation</strong>: 50,000,000 FLOW (100% of presale)</li>
+<li><strong>Rate</strong>: 25,000 FLOW per 1 HYPE (fixed rate for all participants)</li>
+<li><strong>Target</strong>: 2,000 HYPE</li>
+<li><strong>Duration</strong>: 4 weeks or until sold out</li>
+<li><strong>Vesting</strong>: Immediate unlock at launch</li></p><h3>Total Presale Target: 2,000 HYPE</h3><h2>Fair Public Sale - No Tiers</h2><h3>Equal Access for All Participants</h3>
+<li><strong>No minimum investment</strong> - Start with any amount</li>
+<li><strong>No maximum limits</strong> - Buy as much as you want (subject to allocation)</li>
+<li><strong>Same benefits for everyone</strong> - All participants get equal treatment</li>
+<li><strong>No bonuses or tiers</strong> - Everyone pays the same fair price</li></p><h3>Universal Benefits for All Participants</h3>
+<li><strong>Governance Rights</strong>: All token holders can vote on protocol decisions</li>
+<li><strong>Revenue Sharing</strong>: All stakers receive equal percentage of protocol fees</li>
+<li><strong>Platform Access</strong>: Everyone gets full access to all protocol features</li>
+<li><strong>Community Membership</strong>: Equal participation in ecosystem growth</li></p><h2>Vesting Schedule</h2><h3>Presale Token Release</h3>
+<li><strong>All Participants</strong>: Immediate unlock at launch</li>
+<li><strong>No Vesting Period</strong>: Full access to tokens from day one</li>
+<li><strong>No Phases</strong>: Single fair launch for everyone</li></p><h3>Token Security Features</h3>
+<li><strong>Liquidity Lock</strong>: 12-month DEX liquidity lock</li>
+<li><strong>Staking Incentives</strong>: Optional staking for additional rewards</li>
+<li><strong>Utility Requirements</strong>: Token holding unlocks platform features</li>
+<li><strong>Community Governance</strong>: Decentralized protocol decisions</li></p><h2>Presale Terms & Conditions</h2><h3>Accepted Payment Methods</h3>
+<li><strong>HYPE</strong>: Only accepted payment method (HyperEVM native token)</li>
+<li><strong>Simple Process</strong>: Direct HYPE to FLOW conversion</li>
+<li><strong>No Cross-Chain Complexity</strong>: Native HyperEVM ecosystem only</li>
+<li><strong>Gas Efficiency</strong>: Low transaction costs using HYPE</li></p><h3>Public Sale Limits</h3>
+<li><strong>Individual Minimum</strong>: No minimum - start with any amount of HYPE</li>
+<li><strong>Individual Maximum</strong>: No maximum - buy as much as you want</li>
+<li><strong>Total Hard Cap</strong>: 2,000 HYPE (50M FLOW tokens)</li>
+<li><strong>Soft Cap</strong>: 1,000 HYPE (minimum for launch)</li>
+<li><strong>First Come, First Served</strong>: Single fair launch until sold out</li></p><h3>Participation Requirements</h3>
+<li><strong>Open Access</strong>: Global participation welcome</li>
+<li><strong>KYC</strong>: Optional for all participants</li>
+<li><strong>Simple Process</strong>: Connect wallet and contribute HYPE</li></p><h2>Use of Funds</h2><h3>Development (60%)</h3>
+<li>Smart contract development and optimization</li>
+<li>Frontend user interface and experience</li>
+<li>Backend infrastructure and APIs</li>
+<li>Security audits and code reviews</li>
+<li>Testing and quality assurance</li>
+<li>Protocol integrations</li></p><h3>Marketing & Growth (25%)</h3>
+<li>Community building and engagement</li>
+<li>Educational content creation</li>
+<li>Social media presence</li>
+<li>Partnership development</li>
+<li>Brand awareness campaigns</li></p><h3>Operations (10%)</h3>
+<li>Initial team setup</li>
+<li>Legal and compliance requirements</li>
+<li>Development tools and services</li>
+<li>Administrative necessities</li></p><h3>Liquidity & Market Making (5%)</h3>
+<li>Initial DEX liquidity provision</li>
+<li>Market stability support</li></p><h2>Token Launch Plan</h2><h3>DEX Listing Strategy</h3>
+<li><strong>HyperSwap</strong>: Primary DEX listing platform</li>
+<li><strong>Initial Liquidity</strong>: 80 HYPE + equivalent FLOW</li>
+<li><strong>Liquidity Lock</strong>: 12 months to prevent rug pull</li>
+<li><strong>Trading Start</strong>: 24 hours after presale completion</li></p><h3>Yield Farming Launch</h3>
+<li><strong>Farming Pools</strong>: 20M FLOW over 4 years</li>
+<li><strong>Initial APY</strong>: 50-150% for early participants</li>
+<li><strong>Supported Pairs</strong>: FLOW/HYPE primary pair</li>
+<li><strong>Cross-Protocol Incentives</strong>: Additional rewards for multi-platform usage</li></p><h2>Presale Timeline</h2><h3>Preparation Phase (Week 1-2)</h3>
+<li>Smart contract audits completion</li>
+<li>Marketing campaign launch</li>
+<li>Community building and partnerships</li>
+<li>KYC/AML system implementation</li></p><h3>Fair Public Sale (Week 3-6)</h3>
+<li>Open to all participants</li>
+<li>25,000 FLOW per 1 HYPE fixed rate</li>
+<li>No tiers, bonuses, or discrimination</li>
+<li>First come, first served until sold out</li></p><h3>Launch Phase (Week 10)</h3>
+<li>DEX listing and trading start</li>
+<li>Yield farming activation  </li>
+<li>Protocol features go live</li></p><h2>Investment Considerations</h2><h3>Revenue Sharing Model</h3>
+<li><strong>Staking Rewards</strong>: 8-35% APY from protocol revenue distribution</li>
+<li><strong>Governance Rights</strong>: Community-driven voting on all protocol decisions</li>
+<li><strong>Platform Benefits</strong>: MEV protection and priority execution</li>
+<li><strong>Utility Access</strong>: Advanced features and cross-protocol integration</li></p><h3>Growth Potential</h3>
+<li><strong>First-mover advantage</strong> in HyperEVM DeFi infrastructure</li>
+<li><strong>Native HyperCore integration</strong> for enhanced performance</li>
+<li><strong>Cross-protocol optimization</strong> across the ecosystem</li>
+<li><strong>Sustainable revenue model</strong> with transparent fee sharing</li></p><h3>Risk Factors</h3>
+<li>Market volatility and crypto bear markets</li>
+<li>Competition from other HyperEVM protocols</li>
+<li>Regulatory changes affecting DeFi</li>
+<li>Technical risks and smart contract vulnerabilities</li></ul><p><strong>Disclaimer</strong>: All projections are estimates based on market analysis and comparable projects. Cryptocurrency investments carry significant risk and past performance does not guarantee future results.</p><h2>How to Participate</h2><p>1. <strong>Connect Wallet</strong>: Prepare your HyperEVM wallet
+<p>2. <strong>Get HYPE</strong>: Ensure sufficient HYPE balance for purchase
+<p>3. <strong>Participate</strong>: Join the single fair launch phase
+<p>4. <strong>Receive FLOW</strong>: Tokens unlock immediately at launch
+<p>5. <strong>Start Using</strong>: Access all protocol features right away</p><p>The presale represents an exceptional opportunity to join the future of HyperEVM DeFi infrastructure at the ground floor with significant upside potential and sustainable revenue sharing.
+        
+        <p style="text-align: center; margin-top: 40px; color: #4dd0e1;">
+            <strong>HyperFlow Protocol - Advanced DeFi Infrastructure for HyperEVM</strong>
+        </p>
     </div>
 </body>
 </html>
