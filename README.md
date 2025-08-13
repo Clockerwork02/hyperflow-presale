@@ -2,14 +2,14 @@
 
 ## Presale Overview
 
-The HyperFlow Protocol presale offers early access to FLOW tokens before the official launch. Designed with community governance principles and fair distribution mechanisms, the presale ensures equal opportunity participation without tier discrimination or preferential treatment for large investors.
+The HyperFlow Protocol presale offers early access to FLOW tokens through HYPE token payment. With a hard cap of 2,000 HYPE tokens, this exclusive presale ensures fair distribution on a first-come, first-served basis while maintaining community governance principles.
 
 **Presale Key Metrics:**
 - **Token Allocation**: 50,000,000 FLOW tokens (5% of total supply)
 - **Token Price**: $0.0005 per FLOW
-- **Total Raise**: $25,000
-- **Minimum Purchase**: $10
-- **Maximum Purchase**: No Limit
+- **Hard Cap**: 2,000 HYPE
+- **Minimum Purchase**: 0.4 HYPE
+- **Hard Cap**: 2,000 HYPE total
 - **Vesting**: Immediate availability
 
 ## Fair Distribution Model
@@ -29,10 +29,10 @@ Unlike traditional presales that favor large investors through tier systems and 
 |-----------|-------|-------------|
 | **Token Allocation** | 50,000,000 FLOW | 5% of total 1B FLOW supply reserved for presale |
 | **Token Price** | $0.0005 per FLOW | Fixed price for all participants |
-| **Total Fundraising Target** | $25,000 | Conservative funding target for initial development |
-| **Minimum Purchase** | $10 | Low barrier to entry for community participation |
-| **Maximum Purchase** | No Limit | No artificial caps on individual participation |
-| **Payment Methods** | HYPE, ETH, USDC | Multiple payment options for accessibility |
+| **Hard Cap** | 2,000 HYPE | Maximum HYPE tokens accepted for presale |
+| **Minimum Purchase** | 0.4 HYPE | Minimum HYPE amount for participation |
+| **Hard Cap** | 2,000 HYPE total | Hard cap across all participants |
+| **Payment Methods** | HYPE only | Exclusive HYPE token payment method |
 | **Vesting Schedule** | Immediate | Tokens available immediately after purchase |
 | **Lock-up Period** | None | Full liquidity from day one |
 
@@ -40,10 +40,10 @@ Unlike traditional presales that favor large investors through tier systems and 
 
 | Category | Allocation | Amount | Purpose |
 |----------|------------|--------|---------|
-| Development | 60% | $15,000 | Smart contract development, audits, testing |
-| Marketing & Community | 25% | $6,250 | Community building, marketing campaigns, partnerships |
-| Operations | 10% | $2,500 | Legal, compliance, administrative costs |
-| Reserve Fund | 5% | $1,250 | Emergency fund and unexpected expenses |
+| Development | 60% | 1,200 HYPE | Smart contract development, audits, testing |
+| Marketing & Community | 25% | 500 HYPE | Community building, marketing campaigns, partnerships |
+| Operations | 10% | 200 HYPE | Legal, compliance, administrative costs |
+| Reserve Fund | 5% | 100 HYPE | Emergency fund and unexpected expenses |
 
 ## Presale Timeline & Milestones
 
@@ -118,7 +118,7 @@ Presale participants gain immediate access to all FLOW token utilities and benef
 
 ### Step-by-Step Process
 1. **Wallet Setup**: Ensure you have an ERC-20 compatible wallet
-2. **Fund Preparation**: Acquire HYPE, ETH, or USDC for participation
+2. **Fund Preparation**: Acquire HYPE tokens for participation
 3. **Platform Access**: Visit the official HyperFlow presale platform
 4. **Identity Verification**: Complete required KYC/AML verification
 5. **Purchase Tokens**: Select amount and complete payment
