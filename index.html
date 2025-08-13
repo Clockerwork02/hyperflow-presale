@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presale Details - HyperFlow Protocol</title>
-    <!-- New Domain: 1755085500896 -->
+    <title>HyperFlow Protocol - Presale Details</title>
     <style>
         * {
             margin: 0;
@@ -28,27 +27,7 @@
         
         .header {
             text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        .back-link {
-            display: inline-block;
-            background: linear-gradient(135deg, #2dd4bf 0%, #14b8a6 100%);
-            color: #ffffff;
-            padding: 12px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            margin-bottom: 20px;
-            transition: all 0.3s ease;
-            font-weight: 500;
-            font-size: 0.9rem;
-            box-shadow: 0 4px 15px rgba(45, 212, 191, 0.3);
-        }
-        
-        .back-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(45, 212, 191, 0.4);
-            background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+            margin-bottom: 40px;
         }
         
         h1 {
@@ -59,39 +38,289 @@
             font-size: 2.5rem;
             font-weight: 800;
             margin-bottom: 15px;
-            text-align: center;
             line-height: 1.2;
         }
         
         .subtitle {
             color: #94a3b8;
-            font-size: 1rem;
-            margin-bottom: 25px;
-            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
             line-height: 1.4;
+        }
+        
+        .presale-status {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(22, 163, 74, 0.05) 100%);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            border-radius: 12px;
+            padding: 15px 25px;
+            text-align: center;
+            margin: 20px 0;
+            font-weight: 600;
+            color: #22c55e;
+            font-size: 1.1rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .nav-link {
+            background: linear-gradient(135deg, rgba(45, 212, 191, 0.1) 0%, rgba(20, 184, 166, 0.05) 100%);
+            border: 1px solid rgba(45, 212, 191, 0.2);
+            border-radius: 8px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #2dd4bf;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+        
+        .nav-link:hover {
+            background: linear-gradient(135deg, rgba(45, 212, 191, 0.15) 0%, rgba(20, 184, 166, 0.1) 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(45, 212, 191, 0.15);
         }
         
         .content {
             background: rgba(30, 41, 59, 0.9);
             border: 1px solid rgba(45, 212, 191, 0.15);
             border-radius: 16px;
-            padding: 25px 20px;
+            padding: 30px 25px;
             backdrop-filter: blur(20px);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        .presale-overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .overview-card {
+            background: linear-gradient(135deg, rgba(45, 212, 191, 0.1) 0%, rgba(20, 184, 166, 0.05) 100%);
+            border: 1px solid rgba(45, 212, 191, 0.2);
+            border-radius: 12px;
+            padding: 25px 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .overview-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(45, 212, 191, 0.15);
+        }
+        
+        .overview-value {
+            display: block;
+            font-size: 2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #2dd4bf 0%, #14b8a6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+            line-height: 1.2;
+        }
+        
+        .overview-label {
+            font-size: 1rem;
+            color: #94a3b8;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .overview-description {
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+        
+        .participation-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .step-card {
+            background: linear-gradient(135deg, rgba(45, 212, 191, 0.05) 0%, rgba(20, 184, 166, 0.02) 100%);
+            border: 1px solid rgba(45, 212, 191, 0.15);
+            border-radius: 12px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .step-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(45, 212, 191, 0.1);
+            border-color: rgba(45, 212, 191, 0.3);
+        }
+        
+        .step-number {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: linear-gradient(135deg, #2dd4bf 0%, #14b8a6 100%);
+            color: #0f172a;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1rem;
+        }
+        
+        .step-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2dd4bf;
+            margin: 10px 0 15px 0;
+        }
+        
+        .step-description {
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        .investment-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        
+        .detail-card {
+            background: linear-gradient(135deg, rgba(45, 212, 191, 0.05) 0%, rgba(20, 184, 166, 0.02) 100%);
+            border: 1px solid rgba(45, 212, 191, 0.15);
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .detail-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(45, 212, 191, 0.1);
+        }
+        
+        .detail-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2dd4bf;
+            margin-bottom: 10px;
+        }
+        
+        .detail-content {
+            color: #cbd5e1;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        .roi-projections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .roi-card {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(22, 163, 74, 0.05) 100%);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            border-radius: 8px;
+            padding: 20px 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .roi-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(34, 197, 94, 0.15);
+        }
+        
+        .roi-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #22c55e;
+            margin-bottom: 5px;
+        }
+        
+        .roi-label {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            margin-bottom: 3px;
+        }
+        
+        .roi-scenario {
+            font-size: 0.75rem;
+            color: #64748b;
+        }
+        
+        .timeline-container {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(45, 212, 191, 0.2);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            padding: 15px;
+            background: linear-gradient(135deg, rgba(45, 212, 191, 0.05) 0%, rgba(20, 184, 166, 0.02) 100%);
+            border-radius: 8px;
+            border-left: 4px solid #2dd4bf;
+        }
+        
+        .timeline-date {
+            font-weight: 600;
+            color: #2dd4bf;
+            min-width: 120px;
+            font-size: 0.9rem;
+        }
+        
+        .timeline-event {
+            color: #cbd5e1;
+            font-size: 0.9rem;
+        }
+        
+        .risk-warning {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        
+        .warning-title {
+            color: #ef4444;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .warning-content {
+            color: #fca5a5;
+            font-size: 0.9rem;
+            line-height: 1.5;
         }
         
         h2 {
             color: #2dd4bf;
             font-size: 1.8rem;
             font-weight: 700;
-            margin: 30px 0 20px 0;
+            margin: 35px 0 20px 0;
             border-bottom: 2px solid rgba(45, 212, 191, 0.3);
             padding-bottom: 8px;
-            line-height: 1.3;
-        }
-        
-        h2:first-child {
-            margin-top: 0;
         }
         
         h3 {
@@ -99,20 +328,18 @@
             font-size: 1.4rem;
             font-weight: 600;
             margin: 25px 0 15px 0;
-            line-height: 1.3;
         }
         
         h4 {
             color: #0d9488;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-weight: 600;
             margin: 20px 0 12px 0;
-            line-height: 1.3;
         }
         
-        p {
+        p, li {
             color: #cbd5e1;
-            margin-bottom: 18px;
+            margin-bottom: 15px;
             font-size: 1rem;
             line-height: 1.6;
         }
@@ -121,67 +348,12 @@
             margin: 15px 0 15px 20px;
         }
         
-        li {
-            color: #cbd5e1;
-            margin-bottom: 10px;
-            font-size: 1rem;
-            line-height: 1.5;
-        }
-        
         strong {
             color: #2dd4bf;
             font-weight: 600;
         }
         
-        .table-container {
-            overflow-x: auto;
-            border-radius: 12px;
-            border: 1px solid rgba(45, 212, 191, 0.25);
-            margin: 25px 0;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            -webkit-overflow-scrolling: touch;
-        }
-        
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background: rgba(15, 23, 42, 0.95);
-            min-width: 600px;
-        }
-        
-        th {
-            background: linear-gradient(135deg, #2dd4bf 0%, #14b8a6 100%);
-            color: #ffffff;
-            padding: 14px 12px;
-            text-align: left;
-            font-weight: 600;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.3px;
-            white-space: nowrap;
-        }
-        
-        td {
-            padding: 12px;
-            border-bottom: 1px solid rgba(45, 212, 191, 0.1);
-            color: #e2e8f0;
-            font-size: 0.9rem;
-            line-height: 1.4;
-        }
-        
-        tr:last-child td {
-            border-bottom: none;
-        }
-        
-        tr:hover {
-            background: rgba(45, 212, 191, 0.05);
-        }
-        
-        tr:nth-child(even) {
-            background: rgba(30, 41, 59, 0.4);
-        }
-        
-        .highlight-section {
+        .highlight-box {
             background: linear-gradient(135deg, rgba(45, 212, 191, 0.08) 0%, rgba(20, 184, 166, 0.05) 100%);
             border: 1px solid rgba(45, 212, 191, 0.2);
             border-radius: 12px;
@@ -190,7 +362,7 @@
             position: relative;
         }
         
-        .highlight-section::before {
+        .highlight-box::before {
             content: '';
             position: absolute;
             top: 0;
@@ -201,46 +373,50 @@
             border-radius: 12px 12px 0 0;
         }
         
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            margin: 20px 0;
-        }
-        
-        .stat-item {
-            background: linear-gradient(135deg, rgba(45, 212, 191, 0.1) 0%, rgba(20, 184, 166, 0.05) 100%);
+        .cta-section {
+            background: linear-gradient(135deg, rgba(45, 212, 191, 0.08) 0%, rgba(20, 184, 166, 0.05) 100%);
             border: 1px solid rgba(45, 212, 191, 0.2);
             border-radius: 12px;
-            padding: 18px 12px;
+            padding: 30px 25px;
             text-align: center;
+            margin: 30px 0;
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, #2dd4bf 0%, #14b8a6 100%);
+            color: #0f172a;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-decoration: none;
+            display: inline-block;
+            margin: 15px 10px;
             transition: all 0.3s ease;
         }
         
-        .stat-item:hover {
+        .cta-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(45, 212, 191, 0.15);
+            box-shadow: 0 6px 20px rgba(45, 212, 191, 0.3);
         }
         
-        .stat-value {
-            display: block;
-            font-size: 1.6rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, #2dd4bf 0%, #14b8a6 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 6px;
-            line-height: 1.2;
+        .cta-secondary {
+            background: linear-gradient(135deg, rgba(45, 212, 191, 0.1) 0%, rgba(20, 184, 166, 0.05) 100%);
+            border: 1px solid #2dd4bf;
+            color: #2dd4bf;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-block;
+            margin: 15px 10px;
+            transition: all 0.3s ease;
         }
         
-        .stat-label {
-            font-size: 0.8rem;
-            color: #94a3b8;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            font-weight: 500;
-            line-height: 1.2;
+        .cta-secondary:hover {
+            background: linear-gradient(135deg, rgba(45, 212, 191, 0.15) 0%, rgba(20, 184, 166, 0.1) 100%);
+            transform: translateY(-2px);
         }
         
         a {
@@ -256,158 +432,302 @@
         
         @media (max-width: 768px) {
             .container { padding: 15px 10px; }
-            .content { padding: 20px 15px; border-radius: 12px; }
-            h1 { font-size: 2rem; line-height: 1.2; }
-            h2 { font-size: 1.5rem; margin: 25px 0 15px 0; }
+            .content { padding: 25px 20px; border-radius: 12px; }
+            h1 { font-size: 2rem; }
+            .subtitle { font-size: 1rem; }
+            h2 { font-size: 1.5rem; margin: 30px 0 15px 0; }
             h3 { font-size: 1.2rem; margin: 20px 0 12px 0; }
-            .table-container { margin: 15px -5px; border-radius: 8px; }
-            table { font-size: 0.8rem; min-width: 500px; }
-            th, td { padding: 8px 6px; }
-            th { font-size: 0.75rem; padding: 10px 8px; }
-            .stats-grid { grid-template-columns: 1fr; gap: 12px; margin: 15px 0; }
-            .stat-value { font-size: 1.4rem; }
-            .stat-label { font-size: 0.75rem; }
-            .stat-item { padding: 15px 10px; }
-            .highlight-section { padding: 15px; margin: 15px 0; }
+            .nav-links { gap: 15px; }
+            .nav-link { padding: 8px 16px; font-size: 0.85rem; }
+            .presale-overview { grid-template-columns: repeat(2, 1fr); gap: 15px; }
+            .participation-steps { grid-template-columns: 1fr; gap: 20px; }
+            .investment-details { grid-template-columns: 1fr; gap: 15px; }
+            .roi-projections { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+            .overview-value { font-size: 1.6rem; }
+            .cta-button, .cta-secondary { display: block; margin: 10px 0; }
             p, li { font-size: 0.95rem; }
-            .back-link { padding: 10px 16px; font-size: 0.85rem; }
         }
         
         @media (max-width: 480px) {
             h1 { font-size: 1.8rem; }
-            .subtitle { font-size: 0.9rem; }
-            .stats-grid { gap: 10px; }
-            .stat-value { font-size: 1.2rem; }
-            .table-container { margin: 15px -10px; }
-            table { min-width: 450px; }
-            th, td { padding: 6px 4px; }
+            .presale-overview { grid-template-columns: 1fr; }
+            .roi-projections { grid-template-columns: 1fr; }
+            .overview-value { font-size: 1.5rem; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <a href="https://hyperflowprotocol.github.io" class="back-link">← Back to Main Whitepaper</a>
-            <h1>Presale Details</h1>
-            <div class="subtitle">HyperFlow Protocol - Advanced DeFi Infrastructure</div>
+            <h1>HyperFlow Protocol</h1>
+            <div class="subtitle">Presale Details - Fair Launch Investment Opportunity</div>
+            <div class="presale-status">🚀 PRESALE NOW OPEN - Fair Access for All Participants</div>
+        </div>
+        
+        <div class="nav-links">
+            <a href="https://hyperflowprotocol.github.io" class="nav-link">← Whitepaper</a>
+            <a href="https://hyperflowprotocol.github.io/hyperflow-summary" class="nav-link">Summary</a>
+            <a href="https://hyperflowprotocol.github.io/hyperflow-tokenomics" class="nav-link">Tokenomics</a>
+            <a href="https://hyperflowprotocol.github.io/hyperflow-architecture" class="nav-link">Architecture</a>
+            <a href="https://hyperflowprotocol.github.io/hyperflow-utility" class="nav-link">Utility</a>
+            <a href="https://hyperflowprotocol.github.io/hyperflow-roadmap" class="nav-link">Roadmap</a>
         </div>
         
         <div class="content">
+            <h2>Presale Overview</h2>
             
-<h2>Presale Overview</h2>
-
-<div class="stats-grid">
-    <div class="stat-item">
-        <span class="stat-value">50M</span>
-        <span class="stat-label">FLOW Tokens</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-value">25,000</span>
-        <span class="stat-label">FLOW per HYPE</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-value">2,000</span>
-        <span class="stat-label">HYPE Hard Cap</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-value">Fair</span>
-        <span class="stat-label">Launch</span>
-    </div>
-</div>
-
-<p>The HyperFlow Protocol presale offers early access to 50,000,000 FLOW tokens (5% of total supply) at a fixed rate of 25,000 FLOW per 1 HYPE. With a hard cap of 2,000 HYPE tokens, this fair launch ensures equal access for all participants.</p>
-
-<h3>Presale Structure</h3>
-
-<div class="table-container">
-    <table>
-        <thead>
-            <tr>
-                <th>Parameter</th>
-                <th>Value</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong>Token Allocation</strong></td>
-                <td>50,000,000 FLOW</td>
-                <td>5% of total 1B supply</td>
-            </tr>
-            <tr>
-                <td><strong>Exchange Rate</strong></td>
-                <td>25,000 FLOW per 1 HYPE</td>
-                <td>Fixed rate for all participants</td>
-            </tr>
-            <tr>
-                <td><strong>Hard Cap</strong></td>
-                <td>2,000 HYPE</td>
-                <td>Maximum HYPE tokens accepted</td>
-            </tr>
-            <tr>
-                <td><strong>Soft Cap</strong></td>
-                <td>1,000 HYPE</td>
-                <td>Minimum for successful launch</td>
-            </tr>
-            <tr>
-                <td><strong>Duration</strong></td>
-                <td>4 weeks</td>
-                <td>Or until sold out</td>
-            </tr>
-            <tr>
-                <td><strong>Payment Method</strong></td>
-                <td>HYPE only</td>
-                <td>Native HyperEVM token</td>
-            </tr>
-            <tr>
-                <td><strong>Vesting</strong></td>
-                <td>Immediate</td>
-                <td>No vesting period</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
-<h3>Universal Benefits</h3>
-
-<div class="stats-grid">
-    <div class="stat-item">
-        <span class="stat-value">Governance</span>
-        <span class="stat-label">Rights</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-value">Revenue</span>
-        <span class="stat-label">Sharing</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-value">Platform</span>
-        <span class="stat-label">Access</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-value">Community</span>
-        <span class="stat-label">Membership</span>
-    </div>
-</div>
-
-<div class="highlight-section">
-    <h4>Equal Access for All Participants</h4>
-    <ul>
-        <li><strong>Governance Rights:</strong> All token holders can vote on protocol decisions</li>
-        <li><strong>Revenue Sharing:</strong> All stakers receive equal percentage of protocol fees (50%)</li>
-        <li><strong>Platform Access:</strong> Everyone gets full access to all protocol features</li>
-        <li><strong>Community Membership:</strong> Equal participation in ecosystem growth</li>
-    </ul>
-</div>
-
-<div style="text-align: center; margin-top: 40px;">
-    <p><strong>For complete protocol details: <a href="https://hyperflowprotocol.github.io">HyperFlow Protocol Whitepaper</a></strong></p>
-</div>
-
+            <p>HyperFlow Protocol launches with a fair and transparent presale designed to ensure broad community participation without tier discrimination or whale advantages. Our democratic approach prioritizes equal access and transparent pricing for all participants.</p>
+            
+            <div class="presale-overview">
+                <div class="overview-card">
+                    <span class="overview-value">50M</span>
+                    <div class="overview-label">FLOW Tokens</div>
+                    <div class="overview-description">5% of total supply</div>
+                </div>
+                <div class="overview-card">
+                    <span class="overview-value">2,000</span>
+                    <div class="overview-label">HYPE Hard Cap</div>
+                    <div class="overview-description">Maximum raise amount</div>
+                </div>
+                <div class="overview-card">
+                    <span class="overview-value">25,000</span>
+                    <div class="overview-label">FLOW per HYPE</div>
+                    <div class="overview-description">Fixed exchange rate</div>
+                </div>
+                <div class="overview-card">
+                    <span class="overview-value">4 Weeks</span>
+                    <div class="overview-label">Duration</div>
+                    <div class="overview-description">Or until sold out</div>
+                </div>
+            </div>
+            
+            <h2>Investment Details</h2>
+            
+            <div class="investment-details">
+                <div class="detail-card">
+                    <div class="detail-title">💰 Token Allocation</div>
+                    <div class="detail-content">
+                        50,000,000 FLOW tokens available (5% of 1B total supply). This conservative allocation ensures scarcity while providing sufficient liquidity for early supporters.
+                    </div>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="detail-title">💎 Exchange Rate</div>
+                    <div class="detail-content">
+                        Fixed rate of 25,000 FLOW per 1 HYPE token. No variable pricing or tier systems - everyone gets the same fair deal regardless of investment size.
+                    </div>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="detail-title">🔒 Payment Method</div>
+                    <div class="detail-content">
+                        HYPE tokens only. This ensures all participants are already engaged with the HyperEVM ecosystem and understand the technology.
+                    </div>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="detail-title">⚡ Immediate Unlock</div>
+                    <div class="detail-content">
+                        No vesting periods or lock-ups. All FLOW tokens are immediately available after purchase, demonstrating confidence in long-term value.
+                    </div>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="detail-title">📈 Growth Potential</div>
+                    <div class="detail-content">
+                        First comprehensive DeFi infrastructure on HyperEVM with native integration advantages and superior tokenomics model.
+                    </div>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="detail-title">🛡️ Risk Management</div>
+                    <div class="detail-content">
+                        Conservative presale size (5% allocation) minimizes dilution while ensuring sufficient funding for development and audits.
+                    </div>
+                </div>
+            </div>
+            
+            <h2>ROI Projections</h2>
+            
+            <p>Based on comparable DeFi infrastructure projects and HyperEVM ecosystem growth potential, FLOW token holders may experience significant value appreciation through multiple mechanisms:</p>
+            
+            <div class="roi-projections">
+                <div class="roi-card">
+                    <div class="roi-value">300%</div>
+                    <div class="roi-label">Conservative</div>
+                    <div class="roi-scenario">6-12 months</div>
+                </div>
+                <div class="roi-card">
+                    <div class="roi-value">2,000%</div>
+                    <div class="roi-label">Moderate</div>
+                    <div class="roi-scenario">12-24 months</div>
+                </div>
+                <div class="roi-card">
+                    <div class="roi-value">19,900%</div>
+                    <div class="roi-label">Optimistic</div>
+                    <div class="roi-scenario">24+ months</div>
+                </div>
+                <div class="roi-card">
+                    <div class="roi-value">25-100%</div>
+                    <div class="roi-label">Staking APY</div>
+                    <div class="roi-scenario">Ongoing rewards</div>
+                </div>
+            </div>
+            
+            <div class="highlight-box">
+                <h3>Value Appreciation Drivers</h3>
+                <ul>
+                    <li><strong>Revenue Sharing:</strong> 50% of protocol revenue distributed to token holders</li>
+                    <li><strong>Ecosystem Growth:</strong> Native HyperEVM integration provides first-mover advantages</li>
+                    <li><strong>Utility Demand:</strong> Multiple token use cases create consistent buying pressure</li>
+                    <li><strong>Supply Mechanics:</strong> Fee burns and buybacks reduce circulating supply</li>
+                    <li><strong>Governance Premium:</strong> Voting rights increase in value as protocol grows</li>
+                </ul>
+            </div>
+            
+            <h2>How to Participate</h2>
+            
+            <div class="participation-steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-title">Prepare HYPE Tokens</div>
+                    <div class="step-description">
+                        Ensure you have HYPE tokens in your HyperEVM-compatible wallet. You can acquire HYPE through supported exchanges or DEXs within the HyperEVM ecosystem.
+                    </div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-title">Connect Wallet</div>
+                    <div class="step-description">
+                        Connect your wallet to the HyperFlow presale interface. Supported wallets include MetaMask, WalletConnect, and other HyperEVM-compatible wallets.
+                    </div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-title">Choose Investment Amount</div>
+                    <div class="step-description">
+                        Select the amount of HYPE tokens you want to contribute. The interface will automatically calculate your FLOW token allocation at the fixed rate of 25,000 FLOW per HYPE.
+                    </div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-title">Confirm Transaction</div>
+                    <div class="step-description">
+                        Review your transaction details and confirm the purchase. Your FLOW tokens will be immediately available in your wallet after transaction confirmation.
+                    </div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">5</div>
+                    <div class="step-title">Start Earning</div>
+                    <div class="step-description">
+                        Begin staking your FLOW tokens immediately to earn from protocol revenue sharing. Access exclusive features and participate in governance decisions.
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Presale Timeline</h2>
+            
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-date">Week 1</div>
+                    <div class="timeline-event">Presale launch with full documentation release</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Week 2</div>
+                    <div class="timeline-event">Community engagement and partnership announcements</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Week 3</div>
+                    <div class="timeline-event">Smart contract audit completion and results publication</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Week 4</div>
+                    <div class="timeline-event">Presale conclusion and immediate token distribution</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Post-Presale</div>
+                    <div class="timeline-event">DEX listing, staking activation, and protocol development phase 1</div>
+                </div>
+            </div>
+            
+            <h2>Why Invest in HyperFlow</h2>
+            
+            <div class="highlight-box">
+                <h3>Unique Investment Advantages</h3>
+                <ul>
+                    <li><strong>First-Mover Position:</strong> First comprehensive DeFi infrastructure on HyperEVM with exclusive technical integration</li>
+                    <li><strong>Superior Economics:</strong> 50% revenue sharing significantly exceeds industry standards</li>
+                    <li><strong>Technical Moat:</strong> Native HyperCore precompile access unavailable to competitors</li>
+                    <li><strong>Fair Launch:</strong> No VC backing or insider advantages - community-owned from day one</li>
+                    <li><strong>Immediate Utility:</strong> Multiple token use cases drive demand from protocol launch</li>
+                    <li><strong>Proven Team:</strong> Former Ethereum core contributors with track record of successful protocol development</li>
+                </ul>
+            </div>
+            
+            <h2>Use of Funds</h2>
+            
+            <div class="investment-details">
+                <div class="detail-card">
+                    <div class="detail-title">🔨 Development (40%)</div>
+                    <div class="detail-content">
+                        Smart contract development, frontend/backend infrastructure, and core protocol features implementation.
+                    </div>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="detail-title">🛡️ Security (25%)</div>
+                    <div class="detail-content">
+                        Professional smart contract audits, security testing, bug bounty programs, and continuous monitoring systems.
+                    </div>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="detail-title">🌐 Marketing (20%)</div>
+                    <div class="detail-content">
+                        Community building, partnership development, content creation, and ecosystem growth initiatives.
+                    </div>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="detail-title">🏗️ Operations (10%)</div>
+                    <div class="detail-content">
+                        Infrastructure costs, team compensation, legal compliance, and administrative expenses.
+                    </div>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="detail-title">💰 Liquidity (5%)</div>
+                    <div class="detail-content">
+                        Initial DEX liquidity provision and market making to ensure healthy token trading environment.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="risk-warning">
+                <div class="warning-title">⚠️ Investment Considerations</div>
+                <div class="warning-content">
+                    Cryptocurrency investments carry inherent risks including market volatility, regulatory changes, and technology risks. While HyperFlow demonstrates strong fundamentals and growth potential, past performance of similar projects does not guarantee future results. Please invest only what you can afford to lose and conduct your own research before participating.
+                </div>
+            </div>
+            
         </div>
-    </div>
-    
-    <div style="text-align: center; margin: 20px 0; color: #64748b; font-size: 0.85rem;">
-        hyperflowprotocol.github.io
+        
+        <div class="cta-section">
+            <h3 style="color: #2dd4bf; margin-bottom: 15px;">Ready to Join the HyperFlow Revolution?</h3>
+            <p style="color: #94a3b8; margin-bottom: 25px;">
+                Secure your position in the first comprehensive DeFi infrastructure platform on HyperEVM
+            </p>
+            <a href="#" class="cta-button">Participate in Presale</a>
+            <a href="https://hyperflowprotocol.github.io" class="cta-secondary">Read Full Whitepaper</a>
+        </div>
+        
+        <div style="text-align: center; margin: 30px 0; color: #64748b; font-size: 0.85rem;">
+            hyperflowprotocol.github.io/hyperflow-presale
+        </div>
     </div>
 </body>
 </html>
