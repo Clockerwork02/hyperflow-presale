@@ -38,12 +38,13 @@ Unlike traditional presales that favor large investors through tier systems and 
 
 ## Use of Funds
 
-| Category | Allocation | Amount | Purpose |
-|----------|------------|--------|---------|
-| Development | 60% | 1,200 HYPE | Smart contract development, audits, testing |
-| Marketing & Community | 25% | 500 HYPE | Community building, marketing campaigns, partnerships |
-| Operations | 10% | 200 HYPE | Legal, compliance, administrative costs |
-| Reserve Fund | 5% | 100 HYPE | Emergency fund and unexpected expenses |
+Presale proceeds will be allocated responsibly across development, marketing, operations, and reserve funds to ensure sustainable protocol growth and community value creation.
+
+### Funding Priorities
+- **Development**: Smart contract implementation, security audits, and core feature development
+- **Marketing & Community**: Community building, strategic partnerships, and ecosystem growth
+- **Operations**: Legal compliance, administrative costs, and operational infrastructure
+- **Reserve Fund**: Emergency contingency and unexpected development requirements
 
 ## Presale Timeline & Milestones
 
