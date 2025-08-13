@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presale Details - HyperFlow Protocol</title>
-    <!-- Mobile Optimized: 1755083695630 -->
+    <!-- Clean Version: 1755084178516 -->
     <style>
         * {
             margin: 0;
@@ -133,7 +133,6 @@
             font-weight: 600;
         }
         
-        /* Mobile-First Table Design */
         .table-container {
             overflow-x: auto;
             border-radius: 12px;
@@ -147,7 +146,7 @@
             width: 100%;
             border-collapse: collapse;
             background: rgba(15, 23, 42, 0.95);
-            min-width: 600px; /* Ensures table doesn't get too cramped */
+            min-width: 600px;
         }
         
         th {
@@ -180,28 +179,6 @@
         
         tr:nth-child(even) {
             background: rgba(30, 41, 59, 0.4);
-        }
-        
-        /* Mobile Card Layout for Key Info */
-        .mobile-card {
-            background: linear-gradient(135deg, rgba(45, 212, 191, 0.08) 0%, rgba(20, 184, 166, 0.05) 100%);
-            border: 1px solid rgba(45, 212, 191, 0.2);
-            border-radius: 12px;
-            padding: 20px;
-            margin: 20px 0;
-            display: block;
-        }
-        
-        .mobile-card h4 {
-            color: #2dd4bf;
-            font-size: 1rem;
-            margin-bottom: 8px;
-        }
-        
-        .mobile-card p {
-            color: #cbd5e1;
-            font-size: 0.95rem;
-            margin-bottom: 0;
         }
         
         .highlight-section {
@@ -266,26 +243,6 @@
             line-height: 1.2;
         }
         
-        .warning-box {
-            background: rgba(239, 68, 68, 0.1);
-            border: 1px solid rgba(239, 68, 68, 0.3);
-            border-radius: 12px;
-            padding: 18px;
-            margin: 20px 0;
-        }
-        
-        .warning-box h4 {
-            color: #ef4444;
-            margin-bottom: 8px;
-            font-size: 1rem;
-        }
-        
-        .warning-box p {
-            color: #fca5a5;
-            font-size: 0.9rem;
-            line-height: 1.5;
-        }
-        
         a {
             color: #2dd4bf;
             text-decoration: none;
@@ -297,112 +254,33 @@
             text-shadow: 0 0 8px rgba(45, 212, 191, 0.5);
         }
         
-        /* Mobile Optimizations */
         @media (max-width: 768px) {
-            .container { 
-                padding: 15px 10px; 
-            }
-            
-            .content { 
-                padding: 20px 15px;
-                border-radius: 12px;
-            }
-            
-            h1 { 
-                font-size: 2rem;
-                line-height: 1.2;
-            }
-            
-            h2 { 
-                font-size: 1.5rem;
-                margin: 25px 0 15px 0;
-            }
-            
-            h3 {
-                font-size: 1.2rem;
-                margin: 20px 0 12px 0;
-            }
-            
-            .table-container {
-                margin: 15px -5px;
-                border-radius: 8px;
-            }
-            
-            table { 
-                font-size: 0.8rem;
-                min-width: 500px;
-            }
-            
-            th, td { 
-                padding: 8px 6px;
-            }
-            
-            th {
-                font-size: 0.75rem;
-                padding: 10px 8px;
-            }
-            
-            .stats-grid { 
-                grid-template-columns: 1fr;
-                gap: 12px;
-                margin: 15px 0;
-            }
-            
-            .stat-value { 
-                font-size: 1.4rem;
-            }
-            
-            .stat-label {
-                font-size: 0.75rem;
-            }
-            
-            .stat-item {
-                padding: 15px 10px;
-            }
-            
-            .highlight-section, .warning-box, .mobile-card {
-                padding: 15px;
-                margin: 15px 0;
-            }
-            
-            p, li {
-                font-size: 0.95rem;
-            }
-            
-            .back-link {
-                padding: 10px 16px;
-                font-size: 0.85rem;
-            }
+            .container { padding: 15px 10px; }
+            .content { padding: 20px 15px; border-radius: 12px; }
+            h1 { font-size: 2rem; line-height: 1.2; }
+            h2 { font-size: 1.5rem; margin: 25px 0 15px 0; }
+            h3 { font-size: 1.2rem; margin: 20px 0 12px 0; }
+            .table-container { margin: 15px -5px; border-radius: 8px; }
+            table { font-size: 0.8rem; min-width: 500px; }
+            th, td { padding: 8px 6px; }
+            th { font-size: 0.75rem; padding: 10px 8px; }
+            .stats-grid { grid-template-columns: 1fr; gap: 12px; margin: 15px 0; }
+            .stat-value { font-size: 1.4rem; }
+            .stat-label { font-size: 0.75rem; }
+            .stat-item { padding: 15px 10px; }
+            .highlight-section { padding: 15px; margin: 15px 0; }
+            p, li { font-size: 0.95rem; }
+            .back-link { padding: 10px 16px; font-size: 0.85rem; }
         }
         
         @media (max-width: 480px) {
-            h1 { 
-                font-size: 1.8rem;
-            }
-            
-            .subtitle {
-                font-size: 0.9rem;
-            }
-            
-            .stats-grid {
-                gap: 10px;
-            }
-            
-            .stat-value {
-                font-size: 1.2rem;
-            }
-            
-            .table-container {
-                margin: 15px -10px;
-            }
-            
-            table {
-                min-width: 450px;
-            }
-            
-            th, td {
-                padding: 6px 4px;
-            }
+            h1 { font-size: 1.8rem; }
+            .subtitle { font-size: 0.9rem; }
+            .stats-grid { gap: 10px; }
+            .stat-value { font-size: 1.2rem; }
+            .table-container { margin: 15px -10px; }
+            table { min-width: 450px; }
+            th, td { padding: 6px 4px; }
         }
     </style>
 </head>
@@ -435,11 +313,6 @@
         <span class="stat-value">Fair</span>
         <span class="stat-label">Launch</span>
     </div>
-</div>
-
-<div class="warning-box">
-    <h4>Investment Risk Warning</h4>
-    <p><strong>This is an early-stage DeFi protocol with significant risks.</strong> Token value may decrease to zero. Only invest what you can afford to lose entirely.</p>
 </div>
 
 <p>The HyperFlow Protocol presale offers early access to 50,000,000 FLOW tokens (50% of total supply) at a fixed rate of 25,000 FLOW per 1 HYPE. With a hard cap of 2,000 HYPE tokens, this fair launch ensures equal access for all participants.</p>
