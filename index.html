@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presale Details - HyperFlow Protocol</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0f1c;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .back-link {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.1);
+            color: #00d4ff;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-link:hover {
+            background: rgba(0, 212, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        h1 {
+            color: #00d4ff;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            color: #4dd0e1;
+            font-size: 1.8rem;
+            margin: 30px 0 15px 0;
+            border-bottom: 2px solid rgba(77, 208, 225, 0.3);
+            padding-bottom: 8px;
+        }
+        
+        h3 {
+            color: #81c784;
+            font-size: 1.4rem;
+            margin: 25px 0 10px 0;
+        }
+        
+        h4 {
+            color: #ffb74d;
+            font-size: 1.2rem;
+            margin: 20px 0 8px 0;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #cbd5e0;
+        }
+        
+        ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #cbd5e0;
+        }
+        
+        strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+        
+        em {
+            color: #a0aec0;
+        }
+        
+        code {
+            background: rgba(0, 212, 255, 0.1);
+            color: #00d4ff;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+        
+        .code-block {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            border-radius: 8px;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        
+        .code-block pre {
+            padding: 20px;
+            margin: 0;
+        }
+        
+        .code-block code {
+            background: none;
+            color: #e2e8f0;
+            padding: 0;
+        }
+        
+        hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.5), transparent);
+            margin: 30px 0;
+        }
+        
+        .table-container {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(77, 208, 225, 0.3);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 30px 0;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.1);
+        }
+        
+        .table-container h4 {
+            color: #00d4ff;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+        
+        .table-responsive {
+            overflow-x: auto;
+            border-radius: 8px;
+        }
+        
+        .data-table, .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .data-table th, .comparison-table th {
+            background: rgba(0, 212, 255, 0.2);
+            color: #ffffff;
+            padding: 15px 12px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        .data-table td, .comparison-table td {
+            padding: 12px;
+            border-bottom: 1px solid rgba(77, 208, 225, 0.2);
+            color: #cbd5e0;
+            background: rgba(0, 0, 0, 0.1);
+        }
+        
+        .data-table tr:nth-child(even) td, .comparison-table tr:nth-child(even) td {
+            background: rgba(0, 0, 0, 0.2);
+        }
+        
+        .data-table tr:hover td, .comparison-table tr:hover td {
+            background: rgba(0, 212, 255, 0.1);
+        }
+        
+        .hyperflow-advantage {
+            background: rgba(129, 199, 132, 0.2) !important;
+            color: #81c784 !important;
+            font-weight: 600;
+        }
+        
+        .comparison-table td:first-child {
+            font-weight: 600;
+            color: #ffffff;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .container {
+                padding: 20px 15px;
+            }
+            
+            .table-container {
+                padding: 15px;
+                margin: 20px 0;
+            }
+            
+            .data-table th, .comparison-table th,
+            .data-table td, .comparison-table td {
+                padding: 8px 6px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="https://Clockerwork02.github.io" class="back-link">← Back to Main Whitepaper</a>
+        </div>
+        <h1>HyperFlow Presale</h1>
+
+<h2>Fair Launch Principles</h2>
+<p>HyperFlow adopts a democratic presale structure ensuring equal access for all participants:</p>
+<ul>
+    <li><strong>No Tier System</strong>: Equal treatment regardless of investment size</li>
+    <li><strong>Transparent Pricing</strong>: Fixed pricing structure with clear bonuses</li>
+    <li><strong>Community Focus</strong>: Prioritizing long-term community building</li>
+    <li><strong>Democratic Access</strong>: No whitelist or insider advantages</li>
+</ul>
+
+<h2>Presale Structure</h2>
+<div class="table-container">
+    <h4>Phase Breakdown</h4>
+    <div class="table-responsive">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Phase</th>
+                    <th>Duration</th>
+                    <th>Price (HYPE per FLOW)</th>
+                    <th>Bonus Tokens</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Early Bird</strong></td>
+                    <td>2 weeks</td>
+                    <td>0.0008 HYPE</td>
+                    <td>25% bonus</td>
+                </tr>
+                <tr>
+                    <td><strong>Standard</strong></td>
+                    <td>4 weeks</td>
+                    <td>0.001 HYPE</td>
+                    <td>15% bonus</td>
+                </tr>
+                <tr>
+                    <td><strong>Final</strong></td>
+                    <td>1 week</td>
+                    <td>0.0012 HYPE</td>
+                    <td>5% bonus</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<h2>Investment Details</h2>
+<div class="table-container">
+    <h4>Presale Parameters</h4>
+    <div class="table-responsive">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Parameter</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Total Allocation</strong></td>
+                    <td>50,000,000 FLOW (5% of total supply)</td>
+                </tr>
+                <tr>
+                    <td><strong>Base Price</strong></td>
+                    <td>0.001 HYPE per FLOW</td>
+                </tr>
+                <tr>
+                    <td><strong>Payment Methods</strong></td>
+                    <td>HYPE, USDC, USDT, ETH</td>
+                </tr>
+                <tr>
+                    <td><strong>Minimum Investment</strong></td>
+                    <td>No minimum requirement</td>
+                </tr>
+                <tr>
+                    <td><strong>Vesting</strong></td>
+                    <td>Immediate unlock for all participants</td>
+                </tr>
+                <tr>
+                    <td><strong>Bonus Distribution</strong></td>
+                    <td>3,500 HYPE tokens to participants</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<h2>Participation Process</h2>
+<ol>
+    <li><strong>Connect Wallet</strong>: Use MetaMask or compatible HyperEVM wallet</li>
+    <li><strong>Select Phase</strong>: Choose current active presale phase</li>
+    <li><strong>Enter Amount</strong>: Specify investment amount in supported tokens</li>
+    <li><strong>Confirm Transaction</strong>: Review and confirm on-chain transaction</li>
+    <li><strong>Receive Tokens</strong>: FLOW tokens credited immediately after confirmation</li>
+</ol>
+
+<h2>Use of Funds</h2>
+<ul>
+    <li><strong>Development (40%)</strong>: Core protocol development and security audits</li>
+    <li><strong>Marketing (25%)</strong>: Community building and ecosystem growth</li>
+    <li><strong>Operations (20%)</strong>: Team expenses and infrastructure</li>
+    <li><strong>Liquidity (15%)</strong>: Initial DEX liquidity provision</li>
+</ul>
+
+<h2>Post-Presale Roadmap</h2>
+<ul>
+    <li><strong>Week 1-2</strong>: Security audits and final testing</li>
+    <li><strong>Week 3-4</strong>: Mainnet deployment and liquidity provision</li>
+    <li><strong>Month 2</strong>: Basic vault strategies launch</li>
+    <li><strong>Month 3+</strong>: Advanced features and integrations</li>
+</ul>
+    </div>
+</body>
+</html>
